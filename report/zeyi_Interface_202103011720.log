@@ -1,0 +1,82 @@
+2021-03-01 17:20:11,561    4124     INFO test_runner.py(154) - 预计并发线程数：2
+2021-03-01 17:20:12,579   19756     INFO result.py(65) - 开始测试： test_login.test_login_demo (unittest.loader._FailedTest)
+2021-03-01 17:20:12,583   19756    ERROR result.py(171) - 测试产生错误： test_login.test_login_demo (unittest.loader._FailedTest)
+ImportError: Failed to import test module: test_login.test_login_demo
+Traceback (most recent call last):
+  File "D:\Anaconda3Install\lib\unittest\loader.py", line 436, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "D:\Anaconda3Install\lib\unittest\loader.py", line 377, in _get_module_from_name
+    __import__(name)
+  File "D:\auto_saas_20210201\testcase\test_login\test_login_demo.py", line 11, in <module>
+    parameter_data = read_all("test_login_demo")
+  File "D:\auto_saas_20210201\public\config.py", line 16, in read_all
+    content = (yaml.full_load(fd.read()))[keyword]
+  File "D:\Anaconda3Install\lib\site-packages\yaml\__init__.py", line 142, in full_load
+    return load(stream, FullLoader)
+  File "D:\Anaconda3Install\lib\site-packages\yaml\__init__.py", line 114, in load
+    return loader.get_single_data()
+  File "D:\Anaconda3Install\lib\site-packages\yaml\constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "D:\Anaconda3Install\lib\site-packages\yaml\composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "D:\Anaconda3Install\lib\site-packages\yaml\composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "D:\Anaconda3Install\lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "D:\Anaconda3Install\lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "D:\Anaconda3Install\lib\site-packages\yaml\composer.py", line 82, in compose_node
+    node = self.compose_sequence_node(anchor)
+  File "D:\Anaconda3Install\lib\site-packages\yaml\composer.py", line 111, in compose_sequence_node
+    node.value.append(self.compose_node(node, index))
+  File "D:\Anaconda3Install\lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "D:\Anaconda3Install\lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "D:\Anaconda3Install\lib\site-packages\yaml\composer.py", line 64, in compose_node
+    if self.check_event(AliasEvent):
+  File "D:\Anaconda3Install\lib\site-packages\yaml\parser.py", line 98, in check_event
+    self.current_event = self.state()
+  File "D:\Anaconda3Install\lib\site-packages\yaml\parser.py", line 451, in parse_block_mapping_value
+    return self.parse_block_node_or_indentless_sequence()
+  File "D:\Anaconda3Install\lib\site-packages\yaml\parser.py", line 271, in parse_block_node_or_indentless_sequence
+    return self.parse_node(block=True, indentless_sequence=True)
+  File "D:\Anaconda3Install\lib\site-packages\yaml\parser.py", line 369, in parse_node
+    raise ParserError("while parsing a %s node" % node, start_mark,
+yaml.parser.ParserError: while parsing a block node
+expected the node content, but found ','
+  in "<unicode string>", line 3, column 13:
+      - case2:  ,123456
+                ^
+
+
+2021-03-01 17:20:12,587   19756     INFO result.py(86) - 测试结束： test_login.test_login_demo (unittest.loader._FailedTest)
+2021-03-01 17:20:12,587   19756     INFO result.py(87) - 耗时： 0.004984378814697266
+2021-03-01 17:20:13,593   19756     INFO result.py(65) - 开始测试： test_rejected (test_login.test_saas.MyTest)
+2021-03-01 17:20:13,595   19756     INFO test_saas.py(10) - test
+2021-03-01 17:20:23,141   19756     INFO test_saas.py(42) - 测试用例标题：双12活动打开1个宝箱
+2021-03-01 17:20:23,198   19756     INFO HttpRequests.py(45) - post：https://pre.17kuxiu.com/user/getAnchorCoverAuditInfo
+2021-03-01 17:20:23,198   19756     INFO HttpRequests.py(46) - 从请求到接口返回信息耗时：0.051374秒
+2021-03-01 17:20:23,199   19756     INFO HttpRequests.py(26) - 接口返回数据：{"retCode":-100004,"retMsg":"头部信息不完整","success":false}
+2021-03-01 17:20:23,199   19756    ERROR test_saas.py(52) - 失败：False is not true
+2021-03-01 17:20:25,563   19756  WARNING result.py(186) - 测试未通过： test_rejected (test_login.test_saas.MyTest)
+Traceback (most recent call last):
+  File "D:\auto_saas_20210201\testcase\test_login\test_saas.py", line 49, in test_rejected
+    self.assertTrue(r['retCode'] == 200)
+AssertionError: False is not true
+
+2021-03-01 17:20:25,564   19756     INFO result.py(86) - 测试结束： test_rejected (test_login.test_saas.MyTest)
+2021-03-01 17:20:25,564   19756     INFO result.py(87) - 耗时： 11.968689441680908
+2021-03-01 17:20:25,565    4124    ERROR test_runner.py(193) - 
+Error	test_login.test_login_demo (unittest.loader._FailedTest)
+Fail	test_rejected (test_login.test_saas.MyTest)
+
+2021-03-01 17:20:25,570    4124     INFO test_runner.py(211) - 
+测试结束！
+运行时间: 0:00:15.190200
+共计执行用例数量：2
+执行成功用例数量：0
+执行失败用例数量：1
+跳过执行用例数量：0
+产生异常用例数量：1
+

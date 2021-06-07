@@ -1,0 +1,22 @@
+2021-03-02 16:14:30,581   21448     INFO test_runner.py(154) - 预计并发线程数：2
+2021-03-02 16:14:37,799    5800     INFO result.py(65) - 开始测试： test_login_00001_test_login_demo (test_login.test_login_demo.LoginDemo)
+2021-03-02 16:14:37,802    5800    ERROR result.py(171) - 测试产生错误： test_login_00001_test_login_demo (test_login.test_login_demo.LoginDemo)
+Traceback (most recent call last):
+  File "C:\Users\yu.zhang\AppData\Roaming\Python\Python38\site-packages\ddt.py", line 182, in wrapper
+    return func(self, *args, **kwargs)
+TypeError: test_login() missing 2 required positional arguments: 'username' and 'password'
+
+2021-03-02 16:14:37,802    5800     INFO result.py(86) - 测试结束： test_login_00001_test_login_demo (test_login.test_login_demo.LoginDemo)
+2021-03-02 16:14:37,802    5800     INFO result.py(87) - 耗时： 0.0029931068420410156
+2021-03-02 16:14:42,299   21448    ERROR test_runner.py(193) - 
+Error	test_login_00001_test_login_demo (test_login.test_login_demo.LoginDemo)	test_login_00001_test_login_demo
+
+2021-03-02 16:14:42,305   21448     INFO test_runner.py(211) - 
+测试结束！
+运行时间: 0:00:13.301543
+共计执行用例数量：1
+执行成功用例数量：0
+执行失败用例数量：0
+跳过执行用例数量：0
+产生异常用例数量：1
+

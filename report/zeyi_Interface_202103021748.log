@@ -1,0 +1,30 @@
+2021-03-02 17:48:52,329   20168     INFO test_runner.py(154) - 预计并发线程数：2
+2021-03-02 17:48:53,339   21376     INFO result.py(65) - 开始测试： test_login.test_login_demo (unittest.loader._FailedTest)
+2021-03-02 17:48:53,342   21376    ERROR result.py(171) - 测试产生错误： test_login.test_login_demo (unittest.loader._FailedTest)
+ImportError: Failed to import test module: test_login.test_login_demo
+Traceback (most recent call last):
+  File "D:\Anaconda3Install\lib\unittest\loader.py", line 436, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "D:\Anaconda3Install\lib\unittest\loader.py", line 377, in _get_module_from_name
+    __import__(name)
+  File "D:\auto_saas_20210201\testcase\test_login\test_login_demo.py", line 14, in <module>
+    class LoginDemo(unittest.TestCase):
+  File "D:\auto_saas_20210201\testcase\test_login\test_login_demo.py", line 85, in LoginDemo
+    @ddt.file_data(*parameter_data)
+TypeError: file_data() takes from 1 to 2 positional arguments but 4 were given
+
+
+2021-03-02 17:48:53,343   21376     INFO result.py(86) - 测试结束： test_login.test_login_demo (unittest.loader._FailedTest)
+2021-03-02 17:48:53,344   21376     INFO result.py(87) - 耗时： 0.002034902572631836
+2021-03-02 17:48:54,346   20168    ERROR test_runner.py(193) - 
+Error	test_login.test_login_demo (unittest.loader._FailedTest)
+
+2021-03-02 17:48:54,347   20168     INFO test_runner.py(211) - 
+测试结束！
+运行时间: 0:00:03.264393
+共计执行用例数量：1
+执行成功用例数量：0
+执行失败用例数量：0
+跳过执行用例数量：0
+产生异常用例数量：1
+

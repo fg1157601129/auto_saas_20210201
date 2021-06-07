@@ -1,0 +1,68 @@
+2021-02-26 18:29:26,992    2232     INFO test_runner.py(154) - 预计并发线程数：2
+2021-02-26 18:29:29,213   19096     INFO result.py(65) - 开始测试： test_rejected (test_login.test_saas.MyTest)
+2021-02-26 18:29:29,214   19096     INFO test_saas.py(10) - test
+2021-02-26 18:29:33,962    9456     INFO result.py(65) - 开始测试： test_login_00001 (test_login.test_login_demo.LoginDemo)
+2021-02-26 18:29:33,963    9456    ERROR result.py(171) - 测试产生错误： test_login_00001 (test_login.test_login_demo.LoginDemo)
+Traceback (most recent call last):
+  File "C:\Users\yu.zhang\AppData\Roaming\Python\Python38\site-packages\ddt.py", line 182, in wrapper
+    return func(self, *args, **kwargs)
+TypeError: test_login() got an unexpected keyword argument 'Y'
+
+2021-02-26 18:29:33,964    9456     INFO result.py(86) - 测试结束： test_login_00001 (test_login.test_login_demo.LoginDemo)
+2021-02-26 18:29:33,965    9456     INFO result.py(87) - 耗时： 0.001988649368286133
+2021-02-26 18:29:33,965    9456     INFO result.py(65) - 开始测试： test_login_00002 (test_login.test_login_demo.LoginDemo)
+2021-02-26 18:29:33,966    9456    ERROR result.py(171) - 测试产生错误： test_login_00002 (test_login.test_login_demo.LoginDemo)
+Traceback (most recent call last):
+  File "C:\Users\yu.zhang\AppData\Roaming\Python\Python38\site-packages\ddt.py", line 182, in wrapper
+    return func(self, *args, **kwargs)
+TypeError: test_login() got an unexpected keyword argument 'Y'
+
+2021-02-26 18:29:33,967    9456     INFO result.py(86) - 测试结束： test_login_00002 (test_login.test_login_demo.LoginDemo)
+2021-02-26 18:29:33,968    9456     INFO result.py(87) - 耗时： 0.0020067691802978516
+2021-02-26 18:29:33,968    9456     INFO result.py(65) - 开始测试： test_login_00003 (test_login.test_login_demo.LoginDemo)
+2021-02-26 18:29:33,969    9456    ERROR result.py(171) - 测试产生错误： test_login_00003 (test_login.test_login_demo.LoginDemo)
+Traceback (most recent call last):
+  File "C:\Users\yu.zhang\AppData\Roaming\Python\Python38\site-packages\ddt.py", line 182, in wrapper
+    return func(self, *args, **kwargs)
+TypeError: test_login() got an unexpected keyword argument 'Y'
+
+2021-02-26 18:29:33,969    9456     INFO result.py(86) - 测试结束： test_login_00003 (test_login.test_login_demo.LoginDemo)
+2021-02-26 18:29:33,970    9456     INFO result.py(87) - 耗时： 0.0
+2021-02-26 18:29:33,970    9456     INFO result.py(65) - 开始测试： test_login_00004 (test_login.test_login_demo.LoginDemo)
+2021-02-26 18:29:33,971    9456    ERROR result.py(171) - 测试产生错误： test_login_00004 (test_login.test_login_demo.LoginDemo)
+Traceback (most recent call last):
+  File "C:\Users\yu.zhang\AppData\Roaming\Python\Python38\site-packages\ddt.py", line 182, in wrapper
+    return func(self, *args, **kwargs)
+TypeError: test_login() got an unexpected keyword argument 'Y'
+
+2021-02-26 18:29:33,971    9456     INFO result.py(86) - 测试结束： test_login_00004 (test_login.test_login_demo.LoginDemo)
+2021-02-26 18:29:33,971    9456     INFO result.py(87) - 耗时： 0.000997781753540039
+2021-02-26 18:29:38,937   19096     INFO test_saas.py(42) - 测试用例标题：双12活动打开1个宝箱
+2021-02-26 18:29:39,109   19096     INFO HttpRequests.py(45) - post：https://pre.17kuxiu.com/user/getAnchorCoverAuditInfo
+2021-02-26 18:29:39,109   19096     INFO HttpRequests.py(46) - 从请求到接口返回信息耗时：0.158769秒
+2021-02-26 18:29:39,109   19096     INFO HttpRequests.py(26) - 接口返回数据：{"retCode":-100004,"retMsg":"头部信息不完整","success":false}
+2021-02-26 18:29:39,110   19096    ERROR test_saas.py(52) - 失败：False is not true
+2021-02-26 18:29:41,674   19096  WARNING result.py(186) - 测试未通过： test_rejected (test_login.test_saas.MyTest)
+Traceback (most recent call last):
+  File "D:\auto_saas_20210201\testcase\test_login\test_saas.py", line 49, in test_rejected
+    self.assertTrue(r['retCode'] == 200)
+AssertionError: False is not true
+
+2021-02-26 18:29:41,675   19096     INFO result.py(86) - 测试结束： test_rejected (test_login.test_saas.MyTest)
+2021-02-26 18:29:41,676   19096     INFO result.py(87) - 耗时： 12.461586475372314
+2021-02-26 18:29:41,677    2232    ERROR test_runner.py(193) - 
+Error	test_login_00001 (test_login.test_login_demo.LoginDemo)	test_login_00001
+Error	test_login_00002 (test_login.test_login_demo.LoginDemo)	test_login_00002
+Error	test_login_00003 (test_login.test_login_demo.LoginDemo)	test_login_00003
+Error	test_login_00004 (test_login.test_login_demo.LoginDemo)	test_login_00004
+Fail	test_rejected (test_login.test_saas.MyTest)
+
+2021-02-26 18:29:41,683    2232     INFO test_runner.py(211) - 
+测试结束！
+运行时间: 0:00:15.914747
+共计执行用例数量：5
+执行成功用例数量：0
+执行失败用例数量：1
+跳过执行用例数量：0
+产生异常用例数量：4
+

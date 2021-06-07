@@ -1,0 +1,26 @@
+2021-03-01 17:19:24,402    3524     INFO test_runner.py(154) - 预计并发线程数：2
+2021-03-01 17:19:26,722   16588     INFO result.py(65) - 开始测试： test_rejected (test_login.test_saas.MyTest)
+2021-03-01 17:19:26,723   16588     INFO test_saas.py(10) - test
+2021-03-01 17:19:31,109   23196     INFO result.py(65) - 开始测试： test_login_0_case1 (test_login.test_login_demo.LoginDemo)
+2021-03-01 17:19:31,110   23196    ERROR result.py(171) - 测试产生错误： test_login_0_case1 (test_login.test_login_demo.LoginDemo)
+Traceback (most recent call last):
+  File "C:\Users\yu.zhang\AppData\Roaming\Python\Python38\site-packages\parameterized\parameterized.py", line 533, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+TypeError: test_login() missing 2 required positional arguments: 'username' and 'password'
+
+2021-03-01 17:19:31,112   23196     INFO result.py(86) - 测试结束： test_login_0_case1 (test_login.test_login_demo.LoginDemo)
+2021-03-01 17:19:31,113   23196     INFO result.py(87) - 耗时： 0.002008199691772461
+2021-03-01 17:19:31,115   23196     INFO result.py(65) - 开始测试： test_login_1_case2 (test_login.test_login_demo.LoginDemo)
+2021-03-01 17:19:31,117   23196    ERROR result.py(171) - 测试产生错误： test_login_1_case2 (test_login.test_login_demo.LoginDemo)
+Traceback (most recent call last):
+  File "C:\Users\yu.zhang\AppData\Roaming\Python\Python38\site-packages\parameterized\parameterized.py", line 533, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+TypeError: test_login() missing 2 required positional arguments: 'username' and 'password'
+
+2021-03-01 17:19:31,118   23196     INFO result.py(86) - 测试结束： test_login_1_case2 (test_login.test_login_demo.LoginDemo)
+2021-03-01 17:19:31,119   23196     INFO result.py(87) - 耗时： 0.0025267601013183594
+2021-03-01 17:19:36,549   16588     INFO test_saas.py(42) - 测试用例标题：双12活动打开1个宝箱
+2021-03-01 17:19:36,619   16588     INFO HttpRequests.py(45) - post：https://pre.17kuxiu.com/user/getAnchorCoverAuditInfo
+2021-03-01 17:19:36,619   16588     INFO HttpRequests.py(46) - 从请求到接口返回信息耗时：0.063181秒
+2021-03-01 17:19:36,619   16588     INFO HttpRequests.py(26) - 接口返回数据：{"retCode":-100004,"retMsg":"头部信息不完整","success":false}
+2021-03-01 17:19:36,620   16588    ERROR test_saas.py(52) - 失败：False is not true

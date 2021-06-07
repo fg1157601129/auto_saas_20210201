@@ -1,0 +1,62 @@
+test_login_demo:
+  - case1:
+    username: "fang"
+    password: "fang"
+  - case2:
+    username: "fanggang"
+    password: "fanggang"
+
+# 接口测试用例1
+# 将公共url抽取出来
+common:
+  url: http://www.baidu.com/user/login
+  method: "POST"
+# 加上-让其变为列表
+login:
+  - id: 1
+    title: "账号为空登录"
+    json:
+      username: ""
+      password: "123456"
+    expected:
+      status_code: 400
+      message: "用户名不能为空"
+  - id: 2
+    title: "密码为空登录"
+    json:
+      username: "zhou"
+      password: ""
+    expected:
+      status_code: 400
+      message: "密码不能为空"
+
+logintest:
+  - pass:
+      case1:
+      username: "fang"
+      password: "fang"
+      case2:
+        username: "fangg"
+        password: "fangg"
+      case3:
+        username: "fanggang"
+        password: "fanggang"
+      case4:
+        username: "fgang"
+        password: "fgang"
+
+test_login_demo:
+  - case1:
+    username: "fang"
+    password: "fang"
+  - case2:
+    username: "fanggang"
+    password: "fanggang"
+
+test_data_demo:
+  case1:
+    username: "fang"
+    password: "fang"
+  case2:
+    username: "fanggang"
+    password: "fanggang"

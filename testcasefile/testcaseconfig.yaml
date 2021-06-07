@@ -1,0 +1,15 @@
+  - case: "case1"
+    username: xyuer1019
+    password: '123456'
+  - case: "case2"
+    username: ''
+    password: '123456'
+  - case: "case3"
+    username: xyuer
+    password: ''
+  - case: "case4"
+    username: error
+    password: error
+
+
+

@@ -1,0 +1,76 @@
+2021-02-26 18:43:21,052    9756     INFO test_runner.py(154) - 预计并发线程数：2
+2021-02-26 18:43:23,320   20588     INFO result.py(65) - 开始测试： test_rejected (test_login.test_saas.MyTest)
+2021-02-26 18:43:23,321   20588     INFO test_saas.py(10) - test
+2021-02-26 18:43:27,953   20336     INFO result.py(65) - 开始测试： test_login_00001 (test_login.test_login_demo.LoginDemo)
+2021-02-26 18:43:33,638   20588     INFO test_saas.py(42) - 测试用例标题：双12活动打开1个宝箱
+2021-02-26 18:43:33,704   20588     INFO HttpRequests.py(45) - post：https://pre.17kuxiu.com/user/getAnchorCoverAuditInfo
+2021-02-26 18:43:33,705   20588     INFO HttpRequests.py(46) - 从请求到接口返回信息耗时：0.061726秒
+2021-02-26 18:43:33,705   20588     INFO HttpRequests.py(26) - 接口返回数据：{"retCode":-100004,"retMsg":"头部信息不完整","success":false}
+2021-02-26 18:43:33,706   20588    ERROR test_saas.py(52) - 失败：False is not true
+2021-02-26 18:43:35,441   20336    ERROR result.py(171) - 测试产生错误： test_login_00001 (test_login.test_login_demo.LoginDemo)
+Traceback (most recent call last):
+  File "C:\Users\yu.zhang\AppData\Roaming\Python\Python38\site-packages\ddt.py", line 182, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\auto_saas_20210201\testcase\test_login\test_login_demo.py", line 52, in test_login
+    self.logout()
+AttributeError: 'LoginDemo' object has no attribute 'logout'
+
+2021-02-26 18:43:35,442   20336     INFO result.py(86) - 测试结束： test_login_00001 (test_login.test_login_demo.LoginDemo)
+2021-02-26 18:43:35,442   20336     INFO result.py(87) - 耗时： 7.4881911277771
+2021-02-26 18:43:35,442   20336     INFO result.py(65) - 开始测试： test_login_00002 (test_login.test_login_demo.LoginDemo)
+2021-02-26 18:43:36,115   20588  WARNING result.py(186) - 测试未通过： test_rejected (test_login.test_saas.MyTest)
+Traceback (most recent call last):
+  File "D:\auto_saas_20210201\testcase\test_login\test_saas.py", line 49, in test_rejected
+    self.assertTrue(r['retCode'] == 200)
+AssertionError: False is not true
+
+2021-02-26 18:43:36,115   20588     INFO result.py(86) - 测试结束： test_rejected (test_login.test_saas.MyTest)
+2021-02-26 18:43:36,115   20588     INFO result.py(87) - 耗时： 12.794195413589478
+2021-02-26 18:43:40,794   20336    ERROR result.py(171) - 测试产生错误： test_login_00002 (test_login.test_login_demo.LoginDemo)
+Traceback (most recent call last):
+  File "C:\Users\yu.zhang\AppData\Roaming\Python\Python38\site-packages\ddt.py", line 182, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\auto_saas_20210201\testcase\test_login\test_login_demo.py", line 52, in test_login
+    self.logout()
+AttributeError: 'LoginDemo' object has no attribute 'logout'
+
+2021-02-26 18:43:40,794   20336     INFO result.py(86) - 测试结束： test_login_00002 (test_login.test_login_demo.LoginDemo)
+2021-02-26 18:43:40,795   20336     INFO result.py(87) - 耗时： 5.352125644683838
+2021-02-26 18:43:40,795   20336     INFO result.py(65) - 开始测试： test_login_00003 (test_login.test_login_demo.LoginDemo)
+2021-02-26 18:43:45,825   20336    ERROR result.py(171) - 测试产生错误： test_login_00003 (test_login.test_login_demo.LoginDemo)
+Traceback (most recent call last):
+  File "C:\Users\yu.zhang\AppData\Roaming\Python\Python38\site-packages\ddt.py", line 182, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\auto_saas_20210201\testcase\test_login\test_login_demo.py", line 52, in test_login
+    self.logout()
+AttributeError: 'LoginDemo' object has no attribute 'logout'
+
+2021-02-26 18:43:45,826   20336     INFO result.py(86) - 测试结束： test_login_00003 (test_login.test_login_demo.LoginDemo)
+2021-02-26 18:43:45,826   20336     INFO result.py(87) - 耗时： 5.031061172485352
+2021-02-26 18:43:45,826   20336     INFO result.py(65) - 开始测试： test_login_00004 (test_login.test_login_demo.LoginDemo)
+2021-02-26 18:43:50,772   20336    ERROR result.py(171) - 测试产生错误： test_login_00004 (test_login.test_login_demo.LoginDemo)
+Traceback (most recent call last):
+  File "C:\Users\yu.zhang\AppData\Roaming\Python\Python38\site-packages\ddt.py", line 182, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\auto_saas_20210201\testcase\test_login\test_login_demo.py", line 52, in test_login
+    self.logout()
+AttributeError: 'LoginDemo' object has no attribute 'logout'
+
+2021-02-26 18:43:50,772   20336     INFO result.py(86) - 测试结束： test_login_00004 (test_login.test_login_demo.LoginDemo)
+2021-02-26 18:43:50,773   20336     INFO result.py(87) - 耗时： 4.945743560791016
+2021-02-26 18:43:54,482    9756    ERROR test_runner.py(193) - 
+Error	test_login_00001 (test_login.test_login_demo.LoginDemo)	test_login_00001
+Fail	test_rejected (test_login.test_saas.MyTest)
+Error	test_login_00002 (test_login.test_login_demo.LoginDemo)	test_login_00002
+Error	test_login_00003 (test_login.test_login_demo.LoginDemo)	test_login_00003
+Error	test_login_00004 (test_login.test_login_demo.LoginDemo)	test_login_00004
+
+2021-02-26 18:43:54,486    9756     INFO test_runner.py(211) - 
+测试结束！
+运行时间: 0:00:34.703454
+共计执行用例数量：5
+执行成功用例数量：0
+执行失败用例数量：1
+跳过执行用例数量：0
+产生异常用例数量：4
+

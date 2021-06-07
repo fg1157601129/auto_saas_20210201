@@ -1,0 +1,26 @@
+test_login_demo:
+  - case1:
+    username: "fang"
+    password: "fang"
+  - case2:
+    username: "fanggang"
+    password: "fanggang"
+
+
+AccessToken:
+  token1: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI3Nzc3NzAwOTExNCIsImxvZ2luVHMiOjIyNzkyNTQ2MDQ2MzY4NTM4fQ.boJp48UA837xv6HDI37xqN7wa0TESoFRyd7wlm_jMWc
+AppInfo:
+  secretkey: 792f28d6ff1f34ec702c08626d454b39
+  version: 1.8.0
+  versionCode: '20'
+MobileInfo:
+  imei: '863389036925793'
+  loginType: '0'
+  mobileModel: vivo+X7
+  os: '5.1'
+TestAccount:
+  mobile: '18616296324'
+  password: '123456'
+  userId: 77777009114
+
+

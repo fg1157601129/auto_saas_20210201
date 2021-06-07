@@ -1,0 +1,28 @@
+2021-02-18 18:16:55,187   17524     INFO test_runner.py(154) - 预计并发线程数：1
+2021-02-18 18:16:58,195   19556     INFO result.py(65) - 开始测试： test_rejected (test_login.test_saas.MyTest)
+2021-02-18 18:16:58,197   19556     INFO test_saas.py(10) - test
+2021-02-18 18:17:07,683   19556     INFO test_saas.py(42) - 测试用例标题：双12活动打开1个宝箱
+2021-02-18 18:17:07,774   19556     INFO HttpRequests.py(45) - post：https://pre.17kuxiu.com/user/getAnchorCoverAuditInfo
+2021-02-18 18:17:07,774   19556     INFO HttpRequests.py(46) - 从请求到接口返回信息耗时：0.08281秒
+2021-02-18 18:17:07,774   19556     INFO HttpRequests.py(26) - 接口返回数据：{"retCode":-100004,"retMsg":"头部信息不完整","success":false}
+2021-02-18 18:17:07,775   19556    ERROR test_saas.py(52) - 失败：False is not true
+2021-02-18 18:17:07,776   19556  WARNING result.py(186) - 测试未通过： test_rejected (test_login.test_saas.MyTest)
+Traceback (most recent call last):
+  File "D:\auto_saas_20210201\testcase\test_login\test_saas.py", line 49, in test_rejected
+    self.assertTrue(r['retCode'] == 200)
+AssertionError: False is not true
+
+2021-02-18 18:17:07,777   19556     INFO result.py(86) - 测试结束： test_rejected (test_login.test_saas.MyTest)
+2021-02-18 18:17:07,777   19556     INFO result.py(87) - 耗时： 9.58121919631958
+2021-02-18 18:17:07,778   17524    ERROR test_runner.py(193) - 
+Fail	test_rejected (test_login.test_saas.MyTest)
+
+2021-02-18 18:17:07,781   17524     INFO test_runner.py(211) - 
+测试结束！
+运行时间: 0:00:13.736115
+共计执行用例数量：1
+执行成功用例数量：0
+执行失败用例数量：1
+跳过执行用例数量：0
+产生异常用例数量：0
+

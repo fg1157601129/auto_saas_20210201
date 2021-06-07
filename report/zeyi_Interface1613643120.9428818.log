@@ -1,0 +1,22 @@
+2021-02-18 18:12:02,091   20420     INFO test_runner.py(154) - 预计并发线程数：1
+2021-02-18 18:12:05,110   20428     INFO result.py(65) - 开始测试： test_rejected (test_login.test_saas.MyTest)
+2021-02-18 18:12:05,114   20428    ERROR result.py(171) - 测试产生错误： test_rejected (test_login.test_saas.MyTest)
+Traceback (most recent call last):
+  File "D:\auto_saas_20210201\testcase\test_login\test_saas.py", line 10, in setUp
+    logging.info("test")
+NameError: name 'logger' is not defined
+
+2021-02-18 18:12:05,115   20428     INFO result.py(86) - 测试结束： test_rejected (test_login.test_saas.MyTest)
+2021-02-18 18:12:05,115   20428     INFO result.py(87) - 耗时： 0.001985788345336914
+2021-02-18 18:12:08,117   20420    ERROR test_runner.py(193) - 
+Error	test_rejected (test_login.test_saas.MyTest)
+
+2021-02-18 18:12:08,121   20420     INFO test_runner.py(211) - 
+测试结束！
+运行时间: 0:00:07.173320
+共计执行用例数量：1
+执行成功用例数量：0
+执行失败用例数量：0
+跳过执行用例数量：0
+产生异常用例数量：1
+

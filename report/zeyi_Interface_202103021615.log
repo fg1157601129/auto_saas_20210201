@@ -1,0 +1,108 @@
+2021-03-02 16:15:23,329   18960     INFO test_runner.py(154) - 预计并发线程数：2
+2021-03-02 16:15:30,124   10660     INFO result.py(65) - 开始测试： test_login_00001 (test_login.test_login_demo.LoginDemo)
+2021-03-02 16:15:42,237   10660    ERROR result.py(171) - 测试产生错误： test_login_00001 (test_login.test_login_demo.LoginDemo)
+Traceback (most recent call last):
+  File "C:\Users\yu.zhang\AppData\Roaming\Python\Python38\site-packages\ddt.py", line 182, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\auto_saas_20210201\testcase\test_login\test_login_demo.py", line 89, in test_login
+    self.logout()
+  File "D:\auto_saas_20210201\testcase\test_login\test_login_demo.py", line 35, in logout
+    self.driver.find_element_by_link_text("退出").click()
+  File "D:\Anaconda3Install\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 428, in find_element_by_link_text
+    return self.find_element(by=By.LINK_TEXT, value=link_text)
+  File "D:\Anaconda3Install\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 976, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "D:\Anaconda3Install\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "D:\Anaconda3Install\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"link text","selector":"退出"}
+  (Session info: chrome=88.0.4324.182)
+
+
+2021-03-02 16:15:42,237   10660     INFO result.py(86) - 测试结束： test_login_00001 (test_login.test_login_demo.LoginDemo)
+2021-03-02 16:15:42,237   10660     INFO result.py(87) - 耗时： 12.113940715789795
+2021-03-02 16:15:42,238   10660     INFO result.py(65) - 开始测试： test_login_00002 (test_login.test_login_demo.LoginDemo)
+2021-03-02 16:15:52,439   10660    ERROR result.py(171) - 测试产生错误： test_login_00002 (test_login.test_login_demo.LoginDemo)
+Traceback (most recent call last):
+  File "C:\Users\yu.zhang\AppData\Roaming\Python\Python38\site-packages\ddt.py", line 182, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\auto_saas_20210201\testcase\test_login\test_login_demo.py", line 89, in test_login
+    self.logout()
+  File "D:\auto_saas_20210201\testcase\test_login\test_login_demo.py", line 35, in logout
+    self.driver.find_element_by_link_text("退出").click()
+  File "D:\Anaconda3Install\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 428, in find_element_by_link_text
+    return self.find_element(by=By.LINK_TEXT, value=link_text)
+  File "D:\Anaconda3Install\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 976, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "D:\Anaconda3Install\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "D:\Anaconda3Install\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"link text","selector":"退出"}
+  (Session info: chrome=88.0.4324.182)
+
+
+2021-03-02 16:15:52,439   10660     INFO result.py(86) - 测试结束： test_login_00002 (test_login.test_login_demo.LoginDemo)
+2021-03-02 16:15:52,440   10660     INFO result.py(87) - 耗时： 10.200892686843872
+2021-03-02 16:15:52,440   10660     INFO result.py(65) - 开始测试： test_login_00003 (test_login.test_login_demo.LoginDemo)
+2021-03-02 16:16:02,491   10660    ERROR result.py(171) - 测试产生错误： test_login_00003 (test_login.test_login_demo.LoginDemo)
+Traceback (most recent call last):
+  File "C:\Users\yu.zhang\AppData\Roaming\Python\Python38\site-packages\ddt.py", line 182, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\auto_saas_20210201\testcase\test_login\test_login_demo.py", line 89, in test_login
+    self.logout()
+  File "D:\auto_saas_20210201\testcase\test_login\test_login_demo.py", line 35, in logout
+    self.driver.find_element_by_link_text("退出").click()
+  File "D:\Anaconda3Install\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 428, in find_element_by_link_text
+    return self.find_element(by=By.LINK_TEXT, value=link_text)
+  File "D:\Anaconda3Install\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 976, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "D:\Anaconda3Install\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "D:\Anaconda3Install\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"link text","selector":"退出"}
+  (Session info: chrome=88.0.4324.182)
+
+
+2021-03-02 16:16:02,492   10660     INFO result.py(86) - 测试结束： test_login_00003 (test_login.test_login_demo.LoginDemo)
+2021-03-02 16:16:02,492   10660     INFO result.py(87) - 耗时： 10.050703287124634
+2021-03-02 16:16:02,492   10660     INFO result.py(65) - 开始测试： test_login_00004 (test_login.test_login_demo.LoginDemo)
+2021-03-02 16:16:12,571   10660    ERROR result.py(171) - 测试产生错误： test_login_00004 (test_login.test_login_demo.LoginDemo)
+Traceback (most recent call last):
+  File "C:\Users\yu.zhang\AppData\Roaming\Python\Python38\site-packages\ddt.py", line 182, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\auto_saas_20210201\testcase\test_login\test_login_demo.py", line 89, in test_login
+    self.logout()
+  File "D:\auto_saas_20210201\testcase\test_login\test_login_demo.py", line 35, in logout
+    self.driver.find_element_by_link_text("退出").click()
+  File "D:\Anaconda3Install\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 428, in find_element_by_link_text
+    return self.find_element(by=By.LINK_TEXT, value=link_text)
+  File "D:\Anaconda3Install\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 976, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "D:\Anaconda3Install\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "D:\Anaconda3Install\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"link text","selector":"退出"}
+  (Session info: chrome=88.0.4324.182)
+
+
+2021-03-02 16:16:12,571   10660     INFO result.py(86) - 测试结束： test_login_00004 (test_login.test_login_demo.LoginDemo)
+2021-03-02 16:16:12,572   10660     INFO result.py(87) - 耗时： 10.0784432888031
+2021-03-02 16:16:15,035   18960    ERROR test_runner.py(193) - 
+Error	test_login_00001 (test_login.test_login_demo.LoginDemo)	test_login_00001
+Error	test_login_00002 (test_login.test_login_demo.LoginDemo)	test_login_00002
+Error	test_login_00003 (test_login.test_login_demo.LoginDemo)	test_login_00003
+Error	test_login_00004 (test_login.test_login_demo.LoginDemo)	test_login_00004
+
+2021-03-02 16:16:15,037   18960     INFO test_runner.py(211) - 
+测试结束！
+运行时间: 0:00:53.035788
+共计执行用例数量：4
+执行成功用例数量：0
+执行失败用例数量：0
+跳过执行用例数量：0
+产生异常用例数量：4
+

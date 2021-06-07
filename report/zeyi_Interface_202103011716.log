@@ -1,0 +1,148 @@
+2021-03-01 17:16:28,202    2716     INFO test_runner.py(154) - 预计并发线程数：2
+2021-03-01 17:16:30,288    9280     INFO result.py(65) - 开始测试： test_rejected (test_login.test_saas.MyTest)
+2021-03-01 17:16:30,289    9280     INFO test_saas.py(10) - test
+2021-03-01 17:16:34,864   20648     INFO result.py(65) - 开始测试： test_login_00_case (test_login.test_login_demo.LoginDemo)
+2021-03-01 17:16:34,865   20648    ERROR result.py(171) - 测试产生错误： test_login_00_case (test_login.test_login_demo.LoginDemo)
+Traceback (most recent call last):
+  File "C:\Users\yu.zhang\AppData\Roaming\Python\Python38\site-packages\parameterized\parameterized.py", line 533, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+TypeError: test_login() missing 2 required positional arguments: 'username' and 'password'
+
+2021-03-01 17:16:34,867   20648     INFO result.py(86) - 测试结束： test_login_00_case (test_login.test_login_demo.LoginDemo)
+2021-03-01 17:16:34,868   20648     INFO result.py(87) - 耗时： 0.003023862838745117
+2021-03-01 17:16:34,869   20648     INFO result.py(65) - 开始测试： test_login_01_username (test_login.test_login_demo.LoginDemo)
+2021-03-01 17:16:34,869   20648    ERROR result.py(171) - 测试产生错误： test_login_01_username (test_login.test_login_demo.LoginDemo)
+Traceback (most recent call last):
+  File "C:\Users\yu.zhang\AppData\Roaming\Python\Python38\site-packages\parameterized\parameterized.py", line 533, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+TypeError: test_login() missing 2 required positional arguments: 'username' and 'password'
+
+2021-03-01 17:16:34,870   20648     INFO result.py(86) - 测试结束： test_login_01_username (test_login.test_login_demo.LoginDemo)
+2021-03-01 17:16:34,870   20648     INFO result.py(87) - 耗时： 0.000997781753540039
+2021-03-01 17:16:34,870   20648     INFO result.py(65) - 开始测试： test_login_02_password (test_login.test_login_demo.LoginDemo)
+2021-03-01 17:16:34,871   20648    ERROR result.py(171) - 测试产生错误： test_login_02_password (test_login.test_login_demo.LoginDemo)
+Traceback (most recent call last):
+  File "C:\Users\yu.zhang\AppData\Roaming\Python\Python38\site-packages\parameterized\parameterized.py", line 533, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+TypeError: test_login() missing 2 required positional arguments: 'username' and 'password'
+
+2021-03-01 17:16:34,871   20648     INFO result.py(86) - 测试结束： test_login_02_password (test_login.test_login_demo.LoginDemo)
+2021-03-01 17:16:34,872   20648     INFO result.py(87) - 耗时： 0.0
+2021-03-01 17:16:34,872   20648     INFO result.py(65) - 开始测试： test_login_03_case (test_login.test_login_demo.LoginDemo)
+2021-03-01 17:16:34,873   20648    ERROR result.py(171) - 测试产生错误： test_login_03_case (test_login.test_login_demo.LoginDemo)
+Traceback (most recent call last):
+  File "C:\Users\yu.zhang\AppData\Roaming\Python\Python38\site-packages\parameterized\parameterized.py", line 533, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+TypeError: test_login() missing 2 required positional arguments: 'username' and 'password'
+
+2021-03-01 17:16:34,873   20648     INFO result.py(86) - 测试结束： test_login_03_case (test_login.test_login_demo.LoginDemo)
+2021-03-01 17:16:34,873   20648     INFO result.py(87) - 耗时： 0.0009980201721191406
+2021-03-01 17:16:34,873   20648     INFO result.py(65) - 开始测试： test_login_04_username (test_login.test_login_demo.LoginDemo)
+2021-03-01 17:16:34,874   20648    ERROR result.py(171) - 测试产生错误： test_login_04_username (test_login.test_login_demo.LoginDemo)
+Traceback (most recent call last):
+  File "C:\Users\yu.zhang\AppData\Roaming\Python\Python38\site-packages\parameterized\parameterized.py", line 533, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+TypeError: test_login() missing 2 required positional arguments: 'username' and 'password'
+
+2021-03-01 17:16:34,874   20648     INFO result.py(86) - 测试结束： test_login_04_username (test_login.test_login_demo.LoginDemo)
+2021-03-01 17:16:34,874   20648     INFO result.py(87) - 耗时： 0.0009970664978027344
+2021-03-01 17:16:34,874   20648     INFO result.py(65) - 开始测试： test_login_05_password (test_login.test_login_demo.LoginDemo)
+2021-03-01 17:16:34,875   20648    ERROR result.py(171) - 测试产生错误： test_login_05_password (test_login.test_login_demo.LoginDemo)
+Traceback (most recent call last):
+  File "C:\Users\yu.zhang\AppData\Roaming\Python\Python38\site-packages\parameterized\parameterized.py", line 533, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+TypeError: test_login() missing 2 required positional arguments: 'username' and 'password'
+
+2021-03-01 17:16:34,875   20648     INFO result.py(86) - 测试结束： test_login_05_password (test_login.test_login_demo.LoginDemo)
+2021-03-01 17:16:34,875   20648     INFO result.py(87) - 耗时： 0.0009980201721191406
+2021-03-01 17:16:34,875   20648     INFO result.py(65) - 开始测试： test_login_06_case (test_login.test_login_demo.LoginDemo)
+2021-03-01 17:16:34,876   20648    ERROR result.py(171) - 测试产生错误： test_login_06_case (test_login.test_login_demo.LoginDemo)
+Traceback (most recent call last):
+  File "C:\Users\yu.zhang\AppData\Roaming\Python\Python38\site-packages\parameterized\parameterized.py", line 533, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+TypeError: test_login() missing 2 required positional arguments: 'username' and 'password'
+
+2021-03-01 17:16:34,876   20648     INFO result.py(86) - 测试结束： test_login_06_case (test_login.test_login_demo.LoginDemo)
+2021-03-01 17:16:34,876   20648     INFO result.py(87) - 耗时： 0.0009965896606445312
+2021-03-01 17:16:34,876   20648     INFO result.py(65) - 开始测试： test_login_07_username (test_login.test_login_demo.LoginDemo)
+2021-03-01 17:16:34,877   20648    ERROR result.py(171) - 测试产生错误： test_login_07_username (test_login.test_login_demo.LoginDemo)
+Traceback (most recent call last):
+  File "C:\Users\yu.zhang\AppData\Roaming\Python\Python38\site-packages\parameterized\parameterized.py", line 533, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+TypeError: test_login() missing 2 required positional arguments: 'username' and 'password'
+
+2021-03-01 17:16:34,877   20648     INFO result.py(86) - 测试结束： test_login_07_username (test_login.test_login_demo.LoginDemo)
+2021-03-01 17:16:34,877   20648     INFO result.py(87) - 耗时： 0.0009963512420654297
+2021-03-01 17:16:34,877   20648     INFO result.py(65) - 开始测试： test_login_08_password (test_login.test_login_demo.LoginDemo)
+2021-03-01 17:16:34,878   20648    ERROR result.py(171) - 测试产生错误： test_login_08_password (test_login.test_login_demo.LoginDemo)
+Traceback (most recent call last):
+  File "C:\Users\yu.zhang\AppData\Roaming\Python\Python38\site-packages\parameterized\parameterized.py", line 533, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+TypeError: test_login() missing 2 required positional arguments: 'username' and 'password'
+
+2021-03-01 17:16:34,878   20648     INFO result.py(86) - 测试结束： test_login_08_password (test_login.test_login_demo.LoginDemo)
+2021-03-01 17:16:34,878   20648     INFO result.py(87) - 耗时： 0.0009987354278564453
+2021-03-01 17:16:34,878   20648     INFO result.py(65) - 开始测试： test_login_09_case (test_login.test_login_demo.LoginDemo)
+2021-03-01 17:16:34,878   20648    ERROR result.py(171) - 测试产生错误： test_login_09_case (test_login.test_login_demo.LoginDemo)
+Traceback (most recent call last):
+  File "C:\Users\yu.zhang\AppData\Roaming\Python\Python38\site-packages\parameterized\parameterized.py", line 533, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+TypeError: test_login() missing 2 required positional arguments: 'username' and 'password'
+
+2021-03-01 17:16:34,879   20648     INFO result.py(86) - 测试结束： test_login_09_case (test_login.test_login_demo.LoginDemo)
+2021-03-01 17:16:34,879   20648     INFO result.py(87) - 耗时： 0.0009968280792236328
+2021-03-01 17:16:34,879   20648     INFO result.py(65) - 开始测试： test_login_10_username (test_login.test_login_demo.LoginDemo)
+2021-03-01 17:16:34,880   20648    ERROR result.py(171) - 测试产生错误： test_login_10_username (test_login.test_login_demo.LoginDemo)
+Traceback (most recent call last):
+  File "C:\Users\yu.zhang\AppData\Roaming\Python\Python38\site-packages\parameterized\parameterized.py", line 533, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+TypeError: test_login() missing 2 required positional arguments: 'username' and 'password'
+
+2021-03-01 17:16:34,887   20648     INFO result.py(86) - 测试结束： test_login_10_username (test_login.test_login_demo.LoginDemo)
+2021-03-01 17:16:34,888   20648     INFO result.py(87) - 耗时： 0.006979703903198242
+2021-03-01 17:16:34,888   20648     INFO result.py(65) - 开始测试： test_login_11_password (test_login.test_login_demo.LoginDemo)
+2021-03-01 17:16:34,888   20648    ERROR result.py(171) - 测试产生错误： test_login_11_password (test_login.test_login_demo.LoginDemo)
+Traceback (most recent call last):
+  File "C:\Users\yu.zhang\AppData\Roaming\Python\Python38\site-packages\parameterized\parameterized.py", line 533, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+TypeError: test_login() missing 2 required positional arguments: 'username' and 'password'
+
+2021-03-01 17:16:34,888   20648     INFO result.py(86) - 测试结束： test_login_11_password (test_login.test_login_demo.LoginDemo)
+2021-03-01 17:16:34,889   20648     INFO result.py(87) - 耗时： 0.0
+2021-03-01 17:16:39,817    9280     INFO test_saas.py(42) - 测试用例标题：双12活动打开1个宝箱
+2021-03-01 17:16:39,878    9280     INFO HttpRequests.py(45) - post：https://pre.17kuxiu.com/user/getAnchorCoverAuditInfo
+2021-03-01 17:16:39,879    9280     INFO HttpRequests.py(46) - 从请求到接口返回信息耗时：0.056262秒
+2021-03-01 17:16:39,879    9280     INFO HttpRequests.py(26) - 接口返回数据：{"retCode":-100004,"retMsg":"头部信息不完整","success":false}
+2021-03-01 17:16:39,879    9280    ERROR test_saas.py(52) - 失败：False is not true
+2021-03-01 17:16:44,109    9280  WARNING result.py(186) - 测试未通过： test_rejected (test_login.test_saas.MyTest)
+Traceback (most recent call last):
+  File "D:\auto_saas_20210201\testcase\test_login\test_saas.py", line 49, in test_rejected
+    self.assertTrue(r['retCode'] == 200)
+AssertionError: False is not true
+
+2021-03-01 17:16:44,109    9280     INFO result.py(86) - 测试结束： test_rejected (test_login.test_saas.MyTest)
+2021-03-01 17:16:44,109    9280     INFO result.py(87) - 耗时： 13.819973468780518
+2021-03-01 17:16:44,110    2716    ERROR test_runner.py(193) - 
+Error	test_login_00_case (test_login.test_login_demo.LoginDemo)
+Error	test_login_01_username (test_login.test_login_demo.LoginDemo)
+Error	test_login_02_password (test_login.test_login_demo.LoginDemo)
+Error	test_login_03_case (test_login.test_login_demo.LoginDemo)
+Error	test_login_04_username (test_login.test_login_demo.LoginDemo)
+Error	test_login_05_password (test_login.test_login_demo.LoginDemo)
+Error	test_login_06_case (test_login.test_login_demo.LoginDemo)
+Error	test_login_07_username (test_login.test_login_demo.LoginDemo)
+Error	test_login_08_password (test_login.test_login_demo.LoginDemo)
+Error	test_login_09_case (test_login.test_login_demo.LoginDemo)
+Error	test_login_10_username (test_login.test_login_demo.LoginDemo)
+Error	test_login_11_password (test_login.test_login_demo.LoginDemo)
+Fail	test_rejected (test_login.test_saas.MyTest)
+
+2021-03-01 17:16:44,111    2716     INFO test_runner.py(211) - 
+测试结束！
+运行时间: 0:00:17.101934
+共计执行用例数量：13
+执行成功用例数量：0
+执行失败用例数量：1
+跳过执行用例数量：0
+产生异常用例数量：12
+

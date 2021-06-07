@@ -1,0 +1,48 @@
+2021-03-01 17:52:37,914    7348     INFO test_runner.py(154) - 预计并发线程数：2
+2021-03-01 17:52:40,015   18760     INFO result.py(65) - 开始测试： test_rejected (test_login.test_saas.MyTest)
+2021-03-01 17:52:40,016   18760     INFO test_saas.py(10) - test
+2021-03-01 17:52:44,799   16232     INFO result.py(65) - 开始测试： test_login_0_xyuer1019 (test_login.test_login_demo.LoginDemo)
+2021-03-01 17:52:44,803   16232    ERROR result.py(171) - 测试产生错误： test_login_0_xyuer1019 (test_login.test_login_demo.LoginDemo)
+Traceback (most recent call last):
+  File "C:\Users\yu.zhang\AppData\Roaming\Python\Python38\site-packages\parameterized\parameterized.py", line 533, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+TypeError: test_login() missing 2 required positional arguments: 'username' and 'password'
+
+2021-03-01 17:52:44,805   16232     INFO result.py(86) - 测试结束： test_login_0_xyuer1019 (test_login.test_login_demo.LoginDemo)
+2021-03-01 17:52:44,807   16232     INFO result.py(87) - 耗时： 0.0039784908294677734
+2021-03-01 17:52:44,807   16232     INFO result.py(65) - 开始测试： test_login_1_123456 (test_login.test_login_demo.LoginDemo)
+2021-03-01 17:52:44,809   16232    ERROR result.py(171) - 测试产生错误： test_login_1_123456 (test_login.test_login_demo.LoginDemo)
+Traceback (most recent call last):
+  File "C:\Users\yu.zhang\AppData\Roaming\Python\Python38\site-packages\parameterized\parameterized.py", line 533, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+TypeError: test_login() missing 2 required positional arguments: 'username' and 'password'
+
+2021-03-01 17:52:44,815   16232     INFO result.py(86) - 测试结束： test_login_1_123456 (test_login.test_login_demo.LoginDemo)
+2021-03-01 17:52:44,816   16232     INFO result.py(87) - 耗时： 0.007001399993896484
+2021-03-01 17:52:50,457   18760     INFO test_saas.py(42) - 测试用例标题：双12活动打开1个宝箱
+2021-03-01 17:52:50,529   18760     INFO HttpRequests.py(45) - post：https://pre.17kuxiu.com/user/getAnchorCoverAuditInfo
+2021-03-01 17:52:50,529   18760     INFO HttpRequests.py(46) - 从请求到接口返回信息耗时：0.067052秒
+2021-03-01 17:52:50,529   18760     INFO HttpRequests.py(26) - 接口返回数据：{"retCode":-100004,"retMsg":"头部信息不完整","success":false}
+2021-03-01 17:52:50,529   18760    ERROR test_saas.py(52) - 失败：False is not true
+2021-03-01 17:52:53,131   18760  WARNING result.py(186) - 测试未通过： test_rejected (test_login.test_saas.MyTest)
+Traceback (most recent call last):
+  File "D:\auto_saas_20210201\testcase\test_login\test_saas.py", line 49, in test_rejected
+    self.assertTrue(r['retCode'] == 200)
+AssertionError: False is not true
+
+2021-03-01 17:52:53,131   18760     INFO result.py(86) - 测试结束： test_rejected (test_login.test_saas.MyTest)
+2021-03-01 17:52:53,131   18760     INFO result.py(87) - 耗时： 13.115497589111328
+2021-03-01 17:52:53,132    7348    ERROR test_runner.py(193) - 
+Error	test_login_0_xyuer1019 (test_login.test_login_demo.LoginDemo)
+Error	test_login_1_123456 (test_login.test_login_demo.LoginDemo)
+Fail	test_rejected (test_login.test_saas.MyTest)
+
+2021-03-01 17:52:53,133    7348     INFO test_runner.py(211) - 
+测试结束！
+运行时间: 0:00:16.565642
+共计执行用例数量：3
+执行成功用例数量：0
+执行失败用例数量：1
+跳过执行用例数量：0
+产生异常用例数量：2
+

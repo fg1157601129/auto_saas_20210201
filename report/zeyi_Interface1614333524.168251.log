@@ -1,0 +1,111 @@
+2021-02-26 17:58:45,456   12096     INFO test_runner.py(154) - 预计并发线程数：2
+2021-02-26 17:58:47,487   21324     INFO result.py(65) - 开始测试： test_rejected (test_login.test_saas.MyTest)
+2021-02-26 17:58:47,487   21324     INFO test_saas.py(10) - test
+2021-02-26 17:58:52,542    3656     INFO result.py(65) - 开始测试： test_login_1___case1____xyuer1019____123456__ (test_login.test_login_demo.LoginDemo)
+2021-02-26 17:58:58,399   21324     INFO test_saas.py(42) - 测试用例标题：双12活动打开1个宝箱
+2021-02-26 17:58:58,561   21324     INFO HttpRequests.py(45) - post：https://pre.17kuxiu.com/user/getAnchorCoverAuditInfo
+2021-02-26 17:58:58,561   21324     INFO HttpRequests.py(46) - 从请求到接口返回信息耗时：0.151248秒
+2021-02-26 17:58:58,562   21324     INFO HttpRequests.py(26) - 接口返回数据：{"retCode":-100004,"retMsg":"头部信息不完整","success":false}
+2021-02-26 17:58:58,562   21324    ERROR test_saas.py(52) - 失败：False is not true
+2021-02-26 17:59:01,042    3656    ERROR result.py(171) - 测试产生错误： test_login_1___case1____xyuer1019____123456__ (test_login.test_login_demo.LoginDemo)
+Traceback (most recent call last):
+  File "C:\Users\yu.zhang\AppData\Roaming\Python\Python38\site-packages\ddt.py", line 182, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\auto_saas_20210201\testcase\test_login\test_login_demo.py", line 47, in test_login
+    self.logout()
+  File "D:\auto_saas_20210201\testcase\test_login\test_login_demo.py", line 29, in logout
+    self.driver.find_element_by_link_text("退出").click()
+AttributeError: 'NoneType' object has no attribute 'click'
+
+2021-02-26 17:59:01,043    3656     INFO result.py(86) - 测试结束： test_login_1___case1____xyuer1019____123456__ (test_login.test_login_demo.LoginDemo)
+2021-02-26 17:59:01,043    3656     INFO result.py(87) - 耗时： 8.500473022460938
+2021-02-26 17:59:01,043    3656     INFO result.py(65) - 开始测试： test_login_2___case2________123456__ (test_login.test_login_demo.LoginDemo)
+2021-02-26 17:59:01,391    3656    ERROR result.py(171) - 测试产生错误： test_login_2___case2________123456__ (test_login.test_login_demo.LoginDemo)
+Traceback (most recent call last):
+  File "C:\Users\yu.zhang\AppData\Roaming\Python\Python38\site-packages\ddt.py", line 182, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\auto_saas_20210201\testcase\test_login\test_login_demo.py", line 46, in test_login
+    self.login(username, password)
+  File "D:\auto_saas_20210201\testcase\test_login\test_login_demo.py", line 17, in login
+    self.driver.get("http://mail.163.com")
+  File "D:\Anaconda3Install\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "D:\Anaconda3Install\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "D:\Anaconda3Install\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=88.0.4324.182)
+
+
+2021-02-26 17:59:01,391    3656     INFO result.py(86) - 测试结束： test_login_2___case2________123456__ (test_login.test_login_demo.LoginDemo)
+2021-02-26 17:59:01,392    3656     INFO result.py(87) - 耗时： 0.34706974029541016
+2021-02-26 17:59:01,392    3656     INFO result.py(65) - 开始测试： test_login_3___case3____xyuer______ (test_login.test_login_demo.LoginDemo)
+2021-02-26 17:59:01,416    3656    ERROR result.py(171) - 测试产生错误： test_login_3___case3____xyuer______ (test_login.test_login_demo.LoginDemo)
+Traceback (most recent call last):
+  File "C:\Users\yu.zhang\AppData\Roaming\Python\Python38\site-packages\ddt.py", line 182, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\auto_saas_20210201\testcase\test_login\test_login_demo.py", line 46, in test_login
+    self.login(username, password)
+  File "D:\auto_saas_20210201\testcase\test_login\test_login_demo.py", line 17, in login
+    self.driver.get("http://mail.163.com")
+  File "D:\Anaconda3Install\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "D:\Anaconda3Install\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "D:\Anaconda3Install\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=88.0.4324.182)
+
+
+2021-02-26 17:59:01,417    3656     INFO result.py(86) - 测试结束： test_login_3___case3____xyuer______ (test_login.test_login_demo.LoginDemo)
+2021-02-26 17:59:01,417    3656     INFO result.py(87) - 耗时： 0.023938655853271484
+2021-02-26 17:59:01,417    3656     INFO result.py(65) - 开始测试： test_login_4___case4____error____error__ (test_login.test_login_demo.LoginDemo)
+2021-02-26 17:59:01,427    3656    ERROR result.py(171) - 测试产生错误： test_login_4___case4____error____error__ (test_login.test_login_demo.LoginDemo)
+Traceback (most recent call last):
+  File "C:\Users\yu.zhang\AppData\Roaming\Python\Python38\site-packages\ddt.py", line 182, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\auto_saas_20210201\testcase\test_login\test_login_demo.py", line 46, in test_login
+    self.login(username, password)
+  File "D:\auto_saas_20210201\testcase\test_login\test_login_demo.py", line 17, in login
+    self.driver.get("http://mail.163.com")
+  File "D:\Anaconda3Install\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "D:\Anaconda3Install\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "D:\Anaconda3Install\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=88.0.4324.182)
+
+
+2021-02-26 17:59:01,428    3656     INFO result.py(86) - 测试结束： test_login_4___case4____error____error__ (test_login.test_login_demo.LoginDemo)
+2021-02-26 17:59:01,428    3656     INFO result.py(87) - 耗时： 0.0109710693359375
+2021-02-26 17:59:02,270   21324  WARNING result.py(186) - 测试未通过： test_rejected (test_login.test_saas.MyTest)
+Traceback (most recent call last):
+  File "D:\auto_saas_20210201\testcase\test_login\test_saas.py", line 49, in test_rejected
+    self.assertTrue(r['retCode'] == 200)
+AssertionError: False is not true
+
+2021-02-26 17:59:02,270   21324     INFO result.py(86) - 测试结束： test_rejected (test_login.test_saas.MyTest)
+2021-02-26 17:59:02,271   21324     INFO result.py(87) - 耗时： 14.782453775405884
+2021-02-26 17:59:04,283   12096    ERROR test_runner.py(193) - 
+Error	test_login_1___case1____xyuer1019____123456__ (test_login.test_login_demo.LoginDemo)
+Error	test_login_2___case2________123456__ (test_login.test_login_demo.LoginDemo)
+Error	test_login_3___case3____xyuer______ (test_login.test_login_demo.LoginDemo)
+Error	test_login_4___case4____error____error__ (test_login.test_login_demo.LoginDemo)
+Fail	test_rejected (test_login.test_saas.MyTest)
+
+2021-02-26 17:59:04,294   12096     INFO test_runner.py(211) - 
+测试结束！
+运行时间: 0:00:20.114286
+共计执行用例数量：5
+执行成功用例数量：0
+执行失败用例数量：1
+跳过执行用例数量：0
+产生异常用例数量：4
+
